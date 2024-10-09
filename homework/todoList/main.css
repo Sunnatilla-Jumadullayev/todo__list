@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(32, 155, 155);
+}
+.main {
+  position: fixed;
+
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  right: 40%;
+  top: 20%;
+  padding: 10px 20px;
+
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.addImg {
+  width: 25px;
+  height: 25px;
+}
+.title {
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.form {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.input {
+  display: block;
+  width: 250px;
+  height: 30px;
+  border: 1px solid #00000050;
+  cursor: pointer;
+  padding-left: 10px;
+}
+.addBtn {
+  background-color: transparent;
+  border: none;
+}
+.todoList {
+  margin-top: 30px;
+  /* background-color: aqua; */
+  display: block;
+  height: 200px;
+  overflow: auto;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 5px;
+  border: 1px solid #00000090;
+  margin-top: 5px;
+  transition: all 0.3s;
+}
+.delImg {
+  width: 25px;
+  height: 25px;
+}
+.clear {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.listNUmber {
+  font-weight: 100;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.clearBtn {
+  background-color: #8847e0;
+  padding: 6px 5px;
+  border: none;
+  color: #fff;
+  font-weight: bolder;
+}
+.clearBtn:hover {
+  color: #8847e0;
+  background: #fff;
+  border: 2px solid #8847e0;
+}
+
+.delImg {
+  display: none;
+}
+
+.todo:hover {
+  .delImg {
+    display: block;
+  }
+  cursor: pointer;
+  background-color: #57545450;
+}
